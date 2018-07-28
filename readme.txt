@@ -1,0 +1,1 @@
+The "sass" script in the package.json file runs "node-sass" while watching the "scss" folder and outputs results to "dist/css/" folder in recursive mode
