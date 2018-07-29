@@ -71,3 +71,13 @@ main {
     }
   }
 }
+
+.faint {
+  color: rgba(#fff, 0.2);
+  a {
+    color: rgba(#fff, 0.2);
+  }
+  .text-secondary {
+    color: rgba(lighten($secondary-color, 7), 0.2);
+  }
+}
