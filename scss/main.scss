@@ -33,6 +33,7 @@ h3 {
     background-color: rgba(lighten($primary-color, 3), 0.5);
   }
 }
+
 a {
   color: #fff;
   text-decoration: none;
@@ -46,6 +47,10 @@ header {
 
 .text-secondary {
   color: $secondary-color;
+
+  &.faint {
+    color: rgba($secondary-color, 0.2);
+  }
 }
 
 main {
@@ -56,6 +61,10 @@ main {
 
     a {
       padding: 0.4rem;
+
+      &.faint {
+        color: rgba(#fff, 0.2);
+      }
 
       &:hover {
         color: $secondary-color;
@@ -70,14 +79,8 @@ main {
       margin-top: 20vh; //vh = viewport height
     }
   }
-}
 
-.faint {
-  color: rgba(#fff, 0.2);
-  a {
+  &.faint {
     color: rgba(#fff, 0.2);
-  }
-  .text-secondary {
-    color: rgba(lighten($secondary-color, 7), 0.2);
   }
 }

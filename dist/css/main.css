@@ -132,7 +132,7 @@ body {
   font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpg);
+    background: url("../img/background.jpg");
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -143,9 +143,10 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.85);
+      background-color: rgba(68, 68, 68, 0.85);
       background-attachment: fixed;
-      background-size: cover; }
+      background-size: cover;
+      overflow: hidden; }
 
 h1,
 h2,
@@ -174,6 +175,8 @@ header {
 
 .text-secondary {
   color: #eece1a; }
+  .text-secondary.faint {
+    color: rgba(238, 206, 26, 0.2); }
 
 main {
   padding: 4rem;
@@ -182,6 +185,8 @@ main {
     margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem; }
+      main .icons a.faint {
+        color: rgba(255, 255, 255, 0.2); }
       main .icons a:hover {
         color: #eece1a;
         transition: all 0.5s ease-out; }
@@ -189,10 +194,5 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
-
-.faint {
-  color: rgba(255, 255, 255, 0.2); }
-  .faint a {
+  main.faint {
     color: rgba(255, 255, 255, 0.2); }
-  .faint .text-secondary {
-    color: rgba(240, 213, 59, 0.2); }
