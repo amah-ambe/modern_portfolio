@@ -94,11 +94,11 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #444;
+  background: #444;
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
@@ -128,7 +128,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background-color: rgba(76, 76, 76, 0.5); }
+    background: rgba(73, 73, 73, 0.5); }
 
 a {
   color: #fff;
@@ -156,8 +156,6 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
-  main.faint {
-    opacity: 0.4; }
 
 .about-info {
   display: grid;
@@ -170,7 +168,8 @@ main {
     border-radius: 50%;
     border: #eece1a 3px solid; }
   .about-info .bio {
-    grid-area: bio; }
+    grid-area: bio;
+    font-size: 1.5rem; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -178,13 +177,13 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background-color: #515151;
+    background: #515151;
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
 
 .projects {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
@@ -208,7 +207,7 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background-color: #eece1a;
+      background: #eece1a;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -219,21 +218,21 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background-color: #eece1a;
+    background: #eece1a;
     color: #000; }
 
 .btn-dark {
-  background-color: black;
+  background: black;
   color: #fff; }
 
 .btn-light {
-  background-color: #c4c4c4;
+  background: #c4c4c4;
   color: #333; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background-color: #2b2b2b;
+  background: #2b2b2b;
   color: #fff;
   height: 60px; }
 
