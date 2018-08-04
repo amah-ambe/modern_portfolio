@@ -53,6 +53,7 @@ main {
 
   .icons {
     margin-top: 1rem;
+
     a {
       padding: 0.4rem;
       &:hover {
@@ -116,6 +117,7 @@ main {
   img {
     width: 100%;
     border: 3px #fff solid;
+
     &:hover {
       opacity: 0.5;
       border-color: $secondary-color;
@@ -143,9 +145,7 @@ main {
       padding: 0.5rem 1.5rem;
       background-color: $secondary-color;
       color: set-text-color($secondary-color);
-
       span {
-        background-color: $secondary-color;
         color: set-text-color($secondary-color);
       }
     }
