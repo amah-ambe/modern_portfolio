@@ -45,40 +45,31 @@ header {
 
 .text-secondary {
   color: $secondary-color;
-
-  &.faint {
-    color: rgba($secondary-color, 0.2);
-  }
 }
 
 main {
   padding: 4rem;
-  // height: 100%;
-  min-height: calc(
-    100vh - 60px
-  ); //use this to ensure the footer element stays at the bottom of the page
+  min-height: calc(100vh - 60px);
+
   .icons {
     margin-top: 1rem;
     a {
       padding: 0.4rem;
-      &.faint {
-        color: rgba(#fff, 0.2);
-      }
       &:hover {
         color: $secondary-color;
         @include easeOut();
       }
     }
   }
+
   &#home {
     overflow: hidden;
     h1 {
       margin-top: 20vh;
-      // vh = viewport height
     }
   }
   &.faint {
-    color: rgba(#fff, 0.2);
+    opacity: 0.4;
   }
 }
 // about page
@@ -112,5 +103,69 @@ main {
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
+}
+// Work Projects
+.projects {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+// Contact Page
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+  div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    @include easeOut;
+    &:hover {
+      padding: 0.5rem 1.5rem;
+      background-color: $secondary-color;
+      color: set-text-color($secondary-color);
+    }
+  }
+}
+// Button Styles
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover {
+    background-color: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+.btn-dark {
+  @extend .btn;
+  background-color: darken($primary-color, 50);
+  color: #fff;
+}
+.btn-light {
+  @extend .btn;
+  background-color: lighten($primary-color, 50);
+  color: #333;
+}
+// footer fix
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: darken($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: 60px;
 }
 @import "mobile";
